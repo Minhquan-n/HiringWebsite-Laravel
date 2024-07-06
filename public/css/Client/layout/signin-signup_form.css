@@ -1,0 +1,101 @@
+@import url('../../app.css');
+
+#form_signin_signup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: var(--background-black);
+}
+
+#form {
+    background-color: var(--background-white);
+    width: 30%;
+    padding: 16px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--border-black);
+    border-radius: 20px;
+    z-index: 4;
+}
+
+h3 {margin: 5px 0; color: var(--color-blue); text-align: center;}
+
+.close_form {width: 100%; text-align: right; position: relative; transform: translate(3%, -50%);}
+
+.close_form i {font-size: 16px; color: var(--color-black); opacity: 0.5;}
+
+.close_form i:hover {opacity: 0.9; cursor: pointer;}
+
+#signin_form, #signup_form {width: 90%; display: none; flex-direction: column; justify-content: center; align-items: center; }
+
+.input {width: 100%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin: 3px 0;}
+
+.input label {width: 80%; font-weight: 500; font-size: 14px;}
+
+#signinStatus p, #signupStatus p {color: var(--color-red); font-size: 14px;}
+
+#signinStatus, #signupStatus {display: none;}
+
+.input input, .input select {
+    width: 90%;
+    height: 36px;
+    border: solid 1px var(--border-black);
+    border-radius: 10px;
+    outline-width: 1px;
+    outline-color: var(--border-black-3);
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.input i {display: none; font-size: 16px;}
+
+.input .status {width: 80%; margin: 3px; height: fit-content; display: none;}
+
+.input .status p {font-size: 13px; margin: 0;}
+
+.warning_color{color: var(--color-warning);}
+
+.error_color {color: var(--color-red);}
+
+#forgot_password {width: 90%; text-align: right; margin: 5px 0 25px 0; cursor: pointer;}
+
+#forgot_password:hover {color: var(--color-orange);}
+
+.button {width: 100%; display: flex; justify-content: center; align-items: center;}
+
+.button button {
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    background-color: var(--background-blue);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button button:hover {outline: var(--border-blue) double 5px;}
+
+.form_line {width: 90%; border: solid 1px var(--border-black-2); margin: 20px 0;}
+
+.signin_signup p b {color: var(--color-orange); cursor: pointer;}
+
+#note {margin: 5px; color: var(--color-blue); font-size: 15px;}

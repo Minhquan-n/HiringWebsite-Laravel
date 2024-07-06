@@ -1,0 +1,103 @@
+#applicant_title .thanhtieude {background-color: var(--background-blue); color: var(--color-white); height: fit-content;}
+
+.applicant {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    padding: 6px;
+    border: 1px solid var(--border-black-2);
+}
+
+.applicant div {border-right: 1px solid var(--border-black-2); padding-left: 5px;}
+
+.id {width: 5%; text-align: center;}
+
+.ngay, .mahoso {width: 10%; text-align: center;}
+
+.tenungvien {width: 20%;}
+
+.trangthai {width: 15%; text-align: center;}
+
+.vitrituyen {width: 30%;}
+
+#applicant_title .thanhtieude .content {text-align: center; overflow: visible;}
+
+.applicant_button {width: 10%; display: flex; justify-content: center; align-items: center; border: none;}
+
+.applicant_button button {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    color: var(--color-white);
+    font-size: 12px;
+}
+
+.applicant_button .reload_button, .applicant_button .show_cv {background-color: var(--background-blue-3);}
+
+.applicant_button .update_status {background-color: var(--background-yellow);}
+
+.applicant_button .print_cv {background-color: var(--background-gray); color: var(--color-blue);}
+
+
+.show_on_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.show_background {
+    background-color: var(--background-black);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.show_content {
+    padding: 20px;
+    background-color: var(--background-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.show_content::-webkit-scrollbar {width: 0;}
+
+.content_medium {width: 50%;}
+
+.content_large {width: 70%;}
+
+.cv_form_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cv_status_input, #cv_interviewday_input {width: 48%;}
+
+#cv_notice_input {width: 100%;}
+
+#update_cv {display: none;}
+
+#applicant_cv {display: none;}
+
+#applicants_update_submit {background-color: var(--background-blue);}
+
+#applicants_update_submit:hover {outline: var(--border-blue) double 5px;}
+
+.applicant_cv_page {width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.profile_field {width: 90%;}

@@ -1,0 +1,133 @@
+/*  Dinh dang cho header và footer
+    Su dung chung cho cac layout
+*/
+
+@import url('../../app.css');
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-areas: "logo navigation";
+    grid-template-columns: 30% 70%;
+    padding: 6px;
+    width: 100%;
+    height: 40px;
+    border-bottom: solid 1px var(--border-black);
+    background-color: var(--background-white);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#logo {
+    grid-area: logo;
+    margin: 6px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#logo img {
+    width: 200px;
+    height: 34px;
+}
+
+#navigation {
+    grid-area: navigation;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 8px 10px;
+}
+
+#navigation li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 25%;
+}
+
+#navigation li a, #navigation li div {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#navigation li .isActive, #navigation li a:hover, #navigation li div:hover {color: var(--color-orange); cursor: pointer;}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background-white-3);
+    padding: 1.5% 0;
+}
+
+#scrollTop {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--background-blue);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--color-white);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#scrollTop:hover {
+    transform: scale(1.1);
+}
+
+footer img {
+    width: 300px;
+    height: 50px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #5F5F5F;
+    text-align: center;
+    margin: 10px 0;
+}
+
+footer p#footerMail {
+    font-size: 14px;
+    color: #0057FF;
+}
+
+footer p#footerMail:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    margin: 54px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

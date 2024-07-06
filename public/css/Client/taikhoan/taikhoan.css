@@ -1,0 +1,13 @@
+.account_background {position: fixed; width: 100%; top: 0; left: 0; background-color: var(--background-black); z-index: 2;}
+
+.account_page {width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.profile_status_success {color: var(--color-green);}
+
+.profile_status_fail {color: var(--color-red);}
+
+.profile_field_small {width: 30%;}
+
+.profile_field_medium {width: 45%;}
+
+.profile_field_large {width: 90%;}

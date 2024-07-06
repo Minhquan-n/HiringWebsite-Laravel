@@ -1,0 +1,55 @@
+@import url("../../app.css");
+
+#search_place {width: 80%; padding: 20px; background-color: var(--background-white-2); margin: 0 0 20px 0; border-radius: 0 0 5px 5px;}
+
+#search_place form {display: flex; justify-content: space-around; align-items: center; margin: 0; width: 100%;}
+
+#search_place form .position_search {width: 40%;}
+
+#search_place form .derpartment, #search_place form .agency_search {width: 20%;}
+
+#search_place form button {
+    width: 10%;
+    height: 30px;
+    font-size: 15px;
+    background-color: var(--background-blue);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+#search_place form button:hover {height: 28px; outline: var(--border-blue) double 5px; cursor: pointer;}
+
+input, select {padding: 0 10px; height: 36px; font-size: 15px; border: none; border-radius: 10px; outline: var(--boder-white-2) solid 1px;}
+
+input {width: 96%;}
+
+select {width: 100%;}
+
+#post_place {width: 70%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 20px; border-top: 4px solid var(--border-blue); border-radius: 5px;}
+
+.home_posts {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;}
+
+.home_post {
+    width: 45%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 8px;
+}
+
+.home_post:hover {border-left: 4px solid var(--border-blue); cursor: pointer;}
+
+.home_post_position {font-size: 15px; height: 20px; width: 100%; overflow: hidden; margin: 5px 0;}
+
+.home_post_agency, .home_post_date {height: 18px; width: 100%; overflow: hidden; font-size: 14px; margin: 2px 0;}
+
+.home_post_date i {color: var(--color-gray);}
+
+.home_seemore {padding: 5px 10px; margin: 10px;}
+
+.home_seemore a {text-decoration: none; color: var(--color-black);}
+
+.home_seemore a:hover {color: var(--color-orange);}

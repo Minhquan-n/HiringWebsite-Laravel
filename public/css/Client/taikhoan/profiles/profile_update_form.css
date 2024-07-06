@@ -1,0 +1,134 @@
+.account_profile_field_form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border: 2px solid var(--border-black-2);
+    border-radius: 10px;
+}
+
+.account_profile_field_form_lable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blue);
+}
+
+.account_profile_field_form_lable h2 {margin: 8px;}
+
+.account_profile_field_lable {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--color-black);
+    background-color: var(--background-white-4);
+    margin: 10px 0;
+}
+
+.account_profile_field_lable p {margin: 8px 0; padding: 0 20px;}
+
+.form_row {
+    width: 95%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#avatar_side {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar_side #avatar_holder {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-black-2);
+}
+
+#avatar_side #avatar_holder img {
+    width: 150px;
+    height: 170px;
+    object-fit: fill;
+}
+
+#avatar_side label {
+    margin-top: 5px;
+    width: 60%;
+    height: 30px;
+    font-size: 12px;
+    background-color: var(--background-blue);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+#avatar_side input[type="file"] {display: none;}
+
+#basic_info_side {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#basic_info_side .profile_select {width: 45%;}
+
+.profile_input, .profile_select {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: 30px;
+}
+
+.profile_input {width: 98%;}
+
+.profile_select {width: 29%;}
+
+.profile_input label, .profile_select label {font-size: 13px;}
+
+.profile_input input, .profile_select select, .profile_select input {
+    width: -webkit-fill-available;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--border-black-2);
+    border-radius: 10px;
+}
+
+.profile_input textarea {
+    width: -webkit-fill-available;
+    height: 100px;
+    padding: 5px 10px;
+    border: 1px solid var(--border-black-2);
+    border-radius: 10px;
+}
+
+.account_profile_field_form_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.account_profile_field_form_button button {
+    width: 100px;
+    height: 36px;
+    background-color: var(--background-blue);
+    color: var(--color-white);
+    border-radius: 10px;
+}

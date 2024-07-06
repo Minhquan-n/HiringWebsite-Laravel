@@ -1,0 +1,112 @@
+/*  Dinh dang cho header, main, footer, left_side và right_side
+    Su dung chung cho cac layout
+*/
+
+@import url('../app.css');
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    background-color: var(--background-blue);
+    width: 16%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 16px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+header::-webkit-scrollbar {width: 0;}
+
+header #avatar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header #avatar #avatar_img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+header #avatar #avatar_img i {
+    color: var(--color-white);
+    font-size: 100px;
+    /* width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; */
+}
+
+header #avatar p {font-size: 18px; margin-top: 10px; color: var(--color-white);}
+
+.menu_line {width: 100%; border: 1px solid var(--border-white-2); margin: 10px 0;}
+
+.dropdown_menu {
+    margin: 7px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.dropdown_menu a {text-decoration: none; color: var(--color-white);}
+
+.dropdown_menu_active, .dropdown_menu_item_active, .dropdown_menu_item_active:hover, .dropdown_menu_headline:hover, .dropdown_item a:hover {background-color: var(--background-white-4);}
+
+.dropdown_menu_headline {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "headline_left headline_right";
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px 2px;
+}
+
+.dropdown_menu_headline_icon {grid-area: headline_left; font-size: 18px; color: var(--color-white);}
+
+.dropdown_menu_headline_name {grid-area: headline_right; color: var(--color-white);}
+
+.dropdown_menu_headline_name i {font-size: 12px;}
+
+.dropdown_item {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 7px 0;
+}
+
+.dropdown_item a {text-decoration: none; width: 87%; color: var(--color-white); padding: 3px 5px 3px 32px;}
+
+main {
+    width: 80%;
+    margin: 20px 10px 10px 17%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {font-weight: 600; font-size: 26px; text-align: center; width: 100%;}

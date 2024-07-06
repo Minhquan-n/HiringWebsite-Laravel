@@ -1,0 +1,94 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 20px 10px;
+}
+
+.button_page {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-black-2);
+    font-size: 16px;
+    background-color: var(--background-white);
+    border-radius: 10px;
+    margin: 5px;
+    color: var(--color-black);
+}
+
+.tin:hover {
+    cursor: pointer;
+    background-color: var(--background-white-3);
+}
+
+.button_page:hover, .button_page_active {border: 2px solid var(--border-blue); cursor: pointer;}
+
+#apply_button {
+    width: 90%;
+    background-color: var(--background-blue);
+    color: var(--color-white);
+    font-size: 14px;
+    padding: 5px;
+    display: block;
+}
+
+#applied_button {
+    width: 90%;
+    background-color: var(--background-white);
+    border: 2px solid var(--border-blue);
+    color: var(--color-blue);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#show_post {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#post_background {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: var(--background-black);
+}
+
+#post_details {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 20px;
+    background-color: var(--background-white);
+    position: relative;
+    z-index: 4;
+    margin: 10px;
+    padding: 10px 30px;
+}
+
+#post_detail_close {
+    width: 100%;
+    text-align: right;
+    padding: 5px 30px;
+    font-size: 24px;
+    color: var(--color-gray);
+}
+
+#post_detail_close i {cursor: pointer;}
+
+.noilamviec .content {text-align: left;}

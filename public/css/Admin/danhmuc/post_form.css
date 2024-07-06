@@ -1,0 +1,115 @@
+
+@import url("../../app.css");
+
+#tintuyendung_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background-black);
+    z-index: 1;
+    display: none;
+}
+
+#tintuyendung_form {
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    position: fixed;
+    top: 20px;
+    z-index: 2;
+    background-color: var(--background-white);
+    overflow: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+
+#tintuyendung_form::-webkit-scrollbar {width: 0;}
+
+#post_form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 10px 0;
+}
+
+.class_input {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    border: solid 1px var(--border-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-white);
+}
+
+textarea {
+    height: 100px;
+    width: 96%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+input, select {
+    width: 96%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#submit_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post_submit {background-color: var(--background-blue);}
+
+#post_submit:hover {outline: var(--border-blue) double 5px;}
+
+#xoatatca {background-color: var(--background-red);}
+
+#xoatatca:hover {outline: var(--border-red) double 5px;}
+
+#description_input, #workrequest_input, #benefit_input, .post_status {width: 100%;}
+
+#title_input {width: 65%;}
+
+#department_input, #deadline_input, #position_input, #agency_input   {width: 30%;}
+
+ #quantity_input, #sex_input, #age_input {width: 20%;}
+
+ #salary_input {width: 30%;}
+
+#back_to_tintuyendung {
+    position: absolute;
+    top: 60px;
+    left: 23%;
+}
+
+#back_to_tintuyendung p:hover {
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+.warning {
+    color:var(--color-red);
+    font-size: 13px;
+}
+
+#post_status p {
+    color: var(--color-blue);
+    font-size: 13px;
+}

@@ -1,0 +1,26 @@
+#applied_title .thanhtieude {background-color: var(--background-blue); color: var(--color-white); height: fit-content;}
+
+.ungtuyen {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-radius: 5px 5px 0 0; */
+    padding: 6px;
+}
+
+.id {width: 5%;}
+
+.vitriungtuyen {width: 20%;}
+
+.ngay {width: 10%;}
+
+.trangthai {width: 15%;}
+
+.thongbao {width: 30%;}
+
+.content {text-align: center;}
+
+.nomal_cv {border: 1px solid var(--border-black-2);}
+
+.accept_cv {border: 1px solid var(--border-blue); box-shadow: 0 0 3px 4px var(--background-blue-2);}
